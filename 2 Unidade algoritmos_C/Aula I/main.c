@@ -2,5 +2,5 @@
 //"C é a melhor linguagem"
 #include <stdio.h>
 int main (){
-    printf("C é a melhor linguagem");
+    printf("C\n é a melhor\n linguagem");
 }
