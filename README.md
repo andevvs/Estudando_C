@@ -15,14 +15,6 @@
         <p>Este repositório contém materiais e exercicios que utilizei para estudar a linguagem de programação C.</p>
     </header>
 
-  <section>
-        <h2>Conteúdo</h2>
-        <ul>
-            <li><a href="#sobre">Sobre a Linguagem C</a></li>
-            <li><a href="#exemplos">Exemplos de Código</a></li>
-        </ul>
-    </section>
-
   <section id="sobre">
         <h2>Sobre a Linguagem C</h2>
         <p>A linguagem de programação C é uma linguagem de programação de propósito geral que foi desenvolvida originalmente por Dennis Ritchie para o desenvolvimento do sistema operacional Unix.</p>
