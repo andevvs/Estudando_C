@@ -11,10 +11,10 @@ int main()
     int num1 = 5;
     int num2 = 3;
 
-    // Chamada da função e atribuição do resultado a uma variável
+// Chamada da função e atribuição do resultado a uma variável
     int resultado = soma(num1, num2);
 
-    // Impressão do resultado
+// Impressão do resultado
     printf("A soma de %d e %d é: %d\n", num1, num2, resultado);
 
     return 0;
