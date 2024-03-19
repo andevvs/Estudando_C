@@ -13,7 +13,7 @@ int main(){
     int resultado = soma(num1, num2);
 
 // Impressão do resultado
-    printf("A soma de %d e %d é: %d\n", num1, num2, resultado);
+    printf("A soma de %d e %d e: %d\n", num1, num2, resultado);
 
     return 0;
 }
