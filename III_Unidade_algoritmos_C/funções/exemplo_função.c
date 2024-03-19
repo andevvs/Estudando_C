@@ -1,13 +1,11 @@
 #include <stdio.h>
 
 // Declaração da função para calcular a soma
-int soma(int a, int b)
-{
-    return a + b;
-}
+int soma(int a, int b){
+    
+    return a + b;}
 
-int main()
-{
+int main(){
     int num1 = 5;
     int num2 = 3;
 
