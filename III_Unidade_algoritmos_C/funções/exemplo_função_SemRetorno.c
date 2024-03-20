@@ -14,7 +14,7 @@ int main(){
     int p;
     printf("Digite um valor inteiro:");
     scanf("%d", &p);
-    // Chamada da função 
+// Chamada da função 
     verifica(p);
     return(0);
 }
