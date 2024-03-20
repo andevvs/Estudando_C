@@ -5,10 +5,10 @@ void inteiro(int i){
      printf("O numero e positivo");
     }
     else if (i < 0){
-    printf("O numero e negativo");
+     printf("O numero e negativo");
     }
     else{
-        printf("O numero foi igual a zero.");
+     printf("O numero foi igual a zero.");
     }
 }
 int main(){
