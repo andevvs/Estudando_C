@@ -2,13 +2,13 @@
 
 void inteiro(int i){
     if (i > 0){
-     printf("O numero e positivo");
+     printf("%d e positivo", i);
     }
     else if (i < 0){
-     printf("O numero e negativo");
+     printf("%d e negativo", i);
     }
     else{
-     printf("O numero foi igual a zero.");
+     printf("%d igual a zero.", i);
     }
 }
 int main(){
