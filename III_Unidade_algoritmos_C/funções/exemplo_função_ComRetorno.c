@@ -3,6 +3,7 @@
 // Esta função calcula o quadrado de um número inteiro e retorna o resultado.
 int calcularQuadrado(int num) {
 //int quadrado = num * num;
+//e return quadrado; ou pode fazer como deixei abaixo
     return  num * num;
 }
 
