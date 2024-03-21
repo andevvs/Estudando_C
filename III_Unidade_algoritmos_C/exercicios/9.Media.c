@@ -41,10 +41,10 @@ void informarConceito(float media){
 }
 
 int main() {
-    float nota1, nota2, nota3, media;
+    float nota1, nota2, nota3, mediaArit;
     printf("Digite Suas 3 notas:\n");
     scanf("%f %f %f", &nota1, &nota2, &nota3);
-    media=mediaAritmetica(nota1, nota2, nota3);
-    informarConceito(media);
+    mediaArit=mediaAritmetica(nota1, nota2, nota3);
+    informarConceito(mediaArit);
     return 0;
 }
