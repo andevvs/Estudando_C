@@ -1,4 +1,4 @@
-// Elabore uma função, com retorno, que calcula a área de uma circunferência. Para 
+// 6-Elabore uma função, com retorno, que calcula a área de uma circunferência. Para 
 // isto, utilize a seguinte fórmula:𝐴=𝜋𝑟2
 
 #include <stdio.h>
