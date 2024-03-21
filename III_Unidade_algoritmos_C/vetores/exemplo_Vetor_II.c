@@ -9,5 +9,6 @@ int main(){
       for (i = 0; i < 5; i++){
     printf(" %d ", vetor[i]);
     }
+    
     return(0);
 }
