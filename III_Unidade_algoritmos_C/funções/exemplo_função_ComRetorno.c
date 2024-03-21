@@ -7,7 +7,7 @@ int calcularQuadrado(int num) {
 }
 
 int main() {
-    int numero, resultado, bosta;
+    int numero, resultado;
 
     printf("Digite um numero inteiro: ");
     scanf("%d", &numero);
