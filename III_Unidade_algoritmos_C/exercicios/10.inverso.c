@@ -23,6 +23,7 @@ int main(){
             printf("%d", mat[linha][coluna]);
         }
         printf("\n");
+        return 0;
     }
 
 
