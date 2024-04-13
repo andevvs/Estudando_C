@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+//Sintaxe:
+//<tipo da matriz> <identificador da matriz>[<linhas>][<colunas>];
 int main(){
     int matriz [3][3] = {{1,2,3},
                          {4,5,6},
