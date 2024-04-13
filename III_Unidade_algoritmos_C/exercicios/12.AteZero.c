@@ -22,7 +22,7 @@ int main(){
         }
     }
         if (i == tamanho) {
-        printf("O namero %d não esta presente no vetor.\n", valor);
+        printf("O numero %d nao esta presente no vetor.\n", valor);
     }
 
     return 0;
