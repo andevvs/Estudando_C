@@ -4,7 +4,7 @@ int main() {
     int n;
     
     printf("Digite o numero de elementos da sequencia: ");
-    scanf("%d", &n);
+    scanf("%d", &n); 
 
     float sequencia[n];
     int frequencia[n];
@@ -27,7 +27,7 @@ int main() {
             frequencia[i] = freq;
         }
     }
-    
+
     printf("Saida:\n");
     for (int i = 0; i < n; i++) {
         if (frequencia[i] != 0) {
