@@ -31,7 +31,7 @@ int main() {
     printf("Saida:\n");
     for (int i = 0; i < n; i++) {
         if (frequencia[i] != 0) {
-            printf("%.2f ocorre %d vez(es)\n", sequencia[i], frequencia[i]);
+            printf("%.1f ocorre %d vez(es)\n", sequencia[i], frequencia[i]);
         }
     }
     return 0;
