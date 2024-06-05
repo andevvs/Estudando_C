@@ -6,6 +6,9 @@ int main(void){
     printf ("Digite o tamanho do vetor: ");
     scanf("%d", tamanho);
     int * vetor = (int*) calloc(tamanho,sizeof(int));
+     if (vetor==NULL){
+        exit(1);
+    }
 
     printf ("\nDigite um novo tamanho:");
     scanf("%d", &novotamanho);
