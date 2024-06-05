@@ -19,6 +19,14 @@ void ler_vetor(float * vetor, int tamanho){
     }
 }
 
+void imprime_vetor(float * vetor, int tamanho){
+    for (int index = 0; index < tamanho; index++)
+    {
+        printf("%f\t", vetor[index]);
+    }
+    
+}
+
 int main(void){
     
     int tamanho = 5;
@@ -30,4 +38,8 @@ int main(void){
     else{
         printf("Vetor Alocado!\n");
     }
+    //chamada das funçoes ler e imprima
+    ler_vetor(vetor, tamanho);
+    imprime_vetor(vetor, tamanho);
+    return 0;
 }

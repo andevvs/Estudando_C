@@ -20,4 +20,6 @@ int main(void){
     int *p = &x;
 
     printf("%d", *p);
+
+    return 0;
 }
