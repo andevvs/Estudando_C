@@ -41,5 +41,6 @@ int main(void){
     //chamada das funçoes ler e imprima
     ler_vetor(vetor, tamanho);
     imprime_vetor(vetor, tamanho);
+    free(vetor);
     return 0;
 }
