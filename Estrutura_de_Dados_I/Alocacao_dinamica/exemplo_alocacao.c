@@ -11,24 +11,8 @@ int *x = calloc(5, sizeof(int));
 
 A diferenciação entre as duas funções é que a função calloc inicializa cada posição do vetor com zeros.
 */
-void ler_vetor(float * vetor, int tamanho){
-    //funcao para ler valores de um vetor de numeros reais
-    printf("Informe os valores para o vetor: \t");
-      for (int index; index<tamanho; index++){
-        scanf("&f", &vetor[index]);
-    }
-}
-
-void imprime_vetor(float * vetor, int tamanho){
-    for (int index = 0; index < tamanho; index++)
-    {
-        printf("%f\t", vetor[index]);
-    }
-    
-}
-
-int main(void){
-    
+float * cria_vetor(int tamanho){
+    //função para criar o vetor
     int tamanho = 5;
     float * vetor = (float*) malloc (tamanho*sizeof(float));
     if(vetor==NULL){
@@ -38,9 +22,32 @@ int main(void){
     else{
         printf("Vetor Alocado!\n");
     }
+    return vetor;
+}
+
+void ler_vetor(float * vetor, int tamanho){
+    //funcao para ler valores de um vetor de numeros reais
+    printf("Informe os valores para o vetor: \t");
+      for (int index; index<tamanho; index++){
+        scanf("&f", &vetor[index]);
+    }
+}
+
+void imprime_vetor(float * vetor, int tamanho){
+    //função para imprimir o vetor
+    for (int index = 0; index < tamanho; index++)
+    {
+        printf("%f\t", vetor[index]);
+    }
+    
+}
+
+int main(void){
+    float * vetor = cria_vetor(5);
     //chamada das funçoes ler e imprima
     ler_vetor(vetor, tamanho);
     imprime_vetor(vetor, tamanho);
+    //liberar memoria
     free(vetor);
     return 0;
 }
