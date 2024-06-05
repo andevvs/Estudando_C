@@ -10,7 +10,10 @@ int main(void){
     printf ("\nDigite um novo tamanho:");
     scanf("%d", &novotamanho);
     vetor = (int*) realloc(vetor, novotamanho*sizeof(int));
-
+    if (vetor==NULL){
+        exit(1);
+    }
+    
     free(vetor);
     return 0;
 }
