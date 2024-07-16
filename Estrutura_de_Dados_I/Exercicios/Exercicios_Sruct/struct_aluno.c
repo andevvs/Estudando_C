@@ -14,8 +14,10 @@ int main (void){
     Aluno a;
     printf("Digite o nome:");
     scanf("%[^\n]", a.nome);
+    getchar();
     printf("Informe o Curso:");
     scanf("%[^\n]", a.c.nome);
+    getchar();
     printf("informe o codigo do curso:");
     scanf("%d", &a.c.cod);
 
