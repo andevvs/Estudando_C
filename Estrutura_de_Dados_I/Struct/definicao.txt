@@ -18,3 +18,8 @@ p.nome = "João";
 struct pessoa p;
 
 printf("%d", &p); 
+
+*(p+1) = acessa o endereço a frente de p 
+
+(*p+1) = acessa o conteudo de p 
+
