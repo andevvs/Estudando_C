@@ -4,12 +4,6 @@ struct aluno{
     char nome[20];
 };
 
-void captura(struct aluno){
-    printf("informe os dados do aluno:");
-    scanf("[^\n]", &a);
-
-}
-
 int main(){
     struct aluno a;
     captura(&a);
