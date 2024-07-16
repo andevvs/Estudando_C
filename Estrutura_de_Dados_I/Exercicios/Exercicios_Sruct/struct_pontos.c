@@ -26,9 +26,9 @@ float distancia (Ponto* p, Ponto* q){
 
 int main(){
     float p, q;
-    printf("Informe o ponto p:");
-    scanf("%f ", &p);
-    printf("Informe o ponto q:");
-    scanf("%f ", &q);
+    printf("Informe o ponto x:");
+    scanf("%f", &p.x);
+    printf("Informe o ponto y:");
+    scanf("%f", &q.y);
     distancia(p,q);
 }
