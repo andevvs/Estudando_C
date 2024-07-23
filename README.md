@@ -38,7 +38,7 @@ Este repositório está organizados com base nos conteúdos estudados até o mom
 Para compilar e executar o programa em um unico comando no repositório, você pode usar o compilador gcc, segue o exemplo:
 
 ```bash
- gcc exemplo.c -exemplo && exemplo
+ gcc exemplo.c -o exemplo && ./exemplo
 ```
 
 # Agradecimentos
