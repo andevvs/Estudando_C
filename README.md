@@ -35,7 +35,7 @@ Este repositório está organizados com base nos conteúdos estudados até o mom
 
 ## Como usar?
 
-Para compilar qualquer um dos programas em C no repositório, você pode usar o compilador gcc. Por exemplo, para compilar um programa , você pode usar o seguinte comando:
+Para compilar e executar o programa em um unico comando no repositório, você pode usar o compilador gcc, segue o exemplo:
 
 ```bash
  gcc exemplo.c -exemplo && exemplo
