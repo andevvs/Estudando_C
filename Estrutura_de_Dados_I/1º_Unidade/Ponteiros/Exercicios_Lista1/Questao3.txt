@@ -1,0 +1,50 @@
+Questão-3: Qual será a saída exibida pelo programa a seguir:
+
+#include <stdio.h>
+int main(void) {
+    int a, b, c, d;
+    int *p1;
+    int *p2 = &a;
+    int *p3 = &c;
+    p1 = p2;
+    *p2 = 10;
+    b = 20;
+    int **pp;
+    pp = &p1;
+    *p3 = **pp;
+    int *p4 = &d;
+    *p4 = b + (*p1)++;
+    printf("%d\t%d\t%d\t%d\n", a, b, c, d);
+
+    return 0;
+}
+
+Observe que, se int *p é uma variável do tipo ponteiro para inteiro, então int **pp é uma 
+variável do tipo ponteiro para ponteiro de inteiro, isto é, uma varável que poderá armazenar o 
+endereço de um ponteiro do tipo int.
+
+Resposta:
+
+#include <stdio.h>
+int main(void) {
+    int a, b, c, d; as variaveis (a, b, c, d) são declaradas
+    int *p1; ponteiro p1 é declarado
+    int *p2 = &a; ponteiro p2 recebe o endereço de a
+    int *p3 = &c; ponteiro p3 recebe o endereço de c
+    p1 = p2; p1 vai receber o endereço da variável que p2 aponta, o &a
+    *p2 = 10; o conteudo da variável que p2 aponta será 10, "a = 10"
+    b = 20; "b = 20".
+    int **pp; Declaração de pp
+    pp = &p1; pp = &p1 = &a. logo, **pp=10
+    *p3 = **pp; o conteúdo da variável que p3 aponta, no caso, c. Será igual a **pp, que é 10. Logo, "c = 10".
+    int *p4 = &d; ponteiro p4 recebe o endereço de d.
+    *p4 = b + (*p1)++; o conteudo da variável que p4 aponta: 
+                            d = b + (*p1)++ = 20 + 10++ = 30. Logo, "d = 30"
+                            e (*p1)++, aumenta +1 no seu valor, sua adição só ocorrerá depois da soma em *p4.
+                            logo, a = 10+1, "a = 11" 
+    printf("%d\t%d\t%d\t%d\n", a, b, c, d); 
+    
+    return 0;
+}
+
+    será impresso: 11 20 10 30

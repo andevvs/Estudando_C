@@ -1,0 +1,39 @@
+Questão-2: Consedere o trecho do código abaixo:
+
+#include <stdio.h>
+int main(void) {
+    int x, *p;
+    x = 100;
+    p = x;
+    printf("Valor de p = %p \tValor de *p = %d", p, *p);
+}
+
+Se tentarmos compilar o programa (não o compile ainda), você acha que o compilador nos fornece alguma mensagem? Se sim, responda:
+a) Esta mensagem é de erro ou advertência?
+b) Por que o compilador emite tal mensagem?
+c) Compile e execute o programa. A execução foi bem sucedida?
+d) Modifique o trecho de código acima, de modo que nenhuma mensagem seja emitida pelo compilador.
+e) Compile e execute novamente o programa. A execução foi bem sucedida?
+
+Respostas: 
+    a) erro
+
+    b) O compilador emite uma mensagem de erro porque a linha p = x; 
+    tenta atribuir um valor do tipo int a um ponteiro do tipo int *. 
+    não é possivel na linguagem C, pois tipos incompatíveis não podem ser atribuídos diretamente.
+
+    c) não, ocorre o seguinte erro:
+    "error: incompatible types when assigning to type ‘int *’ from type ‘int’"
+
+    d)  #include <stdio.h>
+    int main(void) {
+    int x, *p;
+    x = 100;
+    p = &x; // agora ira apontar para o endereço de x
+    printf("Valor de p = %p \tValor de *p = %d\n", (void*)p, *p);
+    return 0;
+    }
+
+    }
+    e) sim, a saida foi:
+    Valor de p = 0x7ffee72a5678 	Valor de *p = 100

@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "Questao4.C": "cpp",
+        "Questao1.C": "cpp"
     }
 }
