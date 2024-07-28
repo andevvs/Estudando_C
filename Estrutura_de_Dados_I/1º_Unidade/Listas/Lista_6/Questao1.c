@@ -1,6 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+//definindo cores no programa
+#define RESET   "\x1b[0m"
+#define RED     "\x1b[31m"
+#define GREEN   "\x1b[32m"
+#define YELLOW  "\x1b[33m"
+#define BLUE    "\x1b[34m"
+#define MAGENTA "\x1b[35m"
+#define CYAN    "\x1b[36m"
+#define WHITE   "\x1b[37m"
 typedef struct aluno
 {
     int matricula;
@@ -21,7 +31,7 @@ int main(void)
 
     int num_vagas, i, opc;
     char turmaSelecionada[20];
-    printf("Informe o numero de vagas:");
+    printf(GREEN "Informe o numero de vagas:" RESET);
     scanf("%d", &num_vagas);
 
     Aluno **alunos = (Aluno **)malloc(num_vagas * sizeof(Aluno *));
@@ -36,13 +46,13 @@ int main(void)
 
     do
     {
-        printf("\n\t==== MENU ====\n");
+        printf(CYAN"\n\t==== MENU ====\n");
         printf("[1]- Fazer matricula\n");
         printf("[2]- Vizualizar notas\n");
         printf("[3]- Vizualizar todos os dados\n");
         printf("[4]- Dados de uma turma\n");
         printf("[5]- Vizualizar aprovados\n");
-        printf("Informe a opcao: ");
+        printf("Informe a opcao: " RESET);
         scanf("%d", &opc);
         system("cls");
 
@@ -71,7 +81,9 @@ int main(void)
             printf("\nOpcao invalida!\n");
             break;
         }
-        printf("\nDeseja escolher outrar opcao?\n[1]-Sim\n[2]-Nao\n");
+        printf(WHITE "\nDeseja escolher outrar opcao?\n" RESET);
+        printf(GREEN "[1]-Sim\n" RESET);
+        printf(RED "[2]-Nao\n" RESET);
         scanf("%d", &opc);
     } while (opc == 1);
 
@@ -85,7 +97,7 @@ void matricula(int n, Aluno **alunos)
     int i;
     for (i = 0; i < n; i++)
     {
-        printf("\nInforme a matricula do aluno %d:", i);
+        printf(YELLOW"\nInforme a matricula do aluno %d:", i);
         scanf("%d", &alunos[i]->matricula);
         printf("Informe o nome do aluno %d:", i);
         scanf(" %[^\n]", alunos[i]->nome);
@@ -96,7 +108,7 @@ void matricula(int n, Aluno **alunos)
         printf("Informe a nota 2 do aluno %d:", i);
         scanf("%f", &alunos[i]->notas[1]);
         printf("Informe a nota 3 do aluno %d:", i);
-        scanf("%f", &alunos[i]->notas[2]);
+        scanf("%f" RESET, &alunos[i]->notas[2]);
         alunos[i]->media = (alunos[i]->notas[0] + alunos[i]->notas[1] + alunos[i]->notas[2]) / 3;
     }
 }
