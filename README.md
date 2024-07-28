@@ -6,8 +6,9 @@ Este repositório contém materiais e exercicios que utilizei para estudar a lin
 
 Este repositório está organizados com base nos conteúdos estudados até o momento. Para cada conteúdo, há uma pasta correspondente:
 
-- `exemplo`: exemplos de código e outros materiais relacionados ao conteúdo.
-- `exercicios`: Esta subpasta contém uma variedade de exercícios práticos feitos em sala e tambem de listas disponibilizadas.
+- `Exemplo`: exemplos de código e outros materiais relacionados ao conteúdo.
+- `Exercicios`: Esta subpasta contém uma variedade de exercícios práticos feitos em sala e tambem de listas práticas disponibilizadas.
+- `Listas`: Esta subpasta contém uma variedade de listas disponibilizadas pela Docente ao longo da disciplina.
 
 ### 1° Unidade:
 
