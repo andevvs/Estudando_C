@@ -2,7 +2,7 @@
 
 Este repositório contém materiais e exercicios que utilizei para estudar a linguagem de programação C, sendo atualizado ao longo dos períodos.
 
-## Organização do Repositório
+## Como se localizar do Repositório?
 
 Este repositório está organizados com base nos conteúdos estudados até o momento. Para cada conteúdo, há uma pasta correspondente:
 
