@@ -12,46 +12,55 @@ gostaram do produto.
 */
 
 #include <stdio.h>
+#include <stdlib.h>
 
-float Porcentagem(int parte, int total) {
-    if (total == 0) {
-        return 0.0;
+int main(void)
+{
+
+    int n, i;
+    float qtdHomens = 0.0, qtdMulheres = 0.0, porcentagemHomens = 0.0, porcentagemMulheres = 0.0;
+    printf("Informe o numero de entrevistados: ");
+    scanf("%d", &n);
+
+    char *sexo = (char *)malloc(n * sizeof(char));
+    char *pesquisa = (char *)malloc(n * sizeof(char));
+
+    if (sexo == NULL || pesquisa == NULL)
+    {
+        printf("Erro na alocação de memoria");
+        exit(1);
     }
-    return (parte / (float)total) * 100.0;
-}
-
-int main() {
-    int N;
-    printf("Informe o numero de pessoas entrevistadas: ");
-    scanf("%d", &N);
-    char sexo[N];
-    char opiniao[N];
-    int totalFem = 0, gostaramFem = 0;
-    int totalMasc = 0, naoGostaramMasc = 0;
-
-    for (int i = 0; i < N; i++) {
-        printf("Entrevistado %d\n", i + 1);
-        printf("Sexo (M/F): ");
+    for (i = 0; i < n; i++)
+    {
+        printf("%d° Entrevistado:\n", i + 1);
+        printf("Informe o seu sexo (M/F): ");
         scanf(" %c", &sexo[i]);
-        printf("Opinião (gostou/nao gostou): ");
-        scanf(" %s", &opiniao[i]);
-        if (sexo[i] == 'F' || sexo[i] == 'f') {
-            totalFem++;
-            if (opiniao[i] == 'g' || opiniao[i] == 'G') {
-                gostaramFem++;
-            }
-        } else if (sexo[i] == 'M' || sexo[i] == 'm') {
-            totalMasc++;
-            if (opiniao[i] == 'n' || opiniao[i] == 'N') {
-                naoGostaramMasc++;
+        printf("Gostou do produto? (S/N): ");
+        scanf(" %c", &pesquisa[i]);
+    }
+
+    for (i = 0; i < n; i++)
+        if (sexo[i] == 'M')
+        {
+            if (pesquisa[i] == 'N')
+            {
+
+                qtdHomens++;
             }
         }
-    }
+        else
+        {
+            if (pesquisa[i] == 'S')
+            {
+                qtdMulheres++;
+            }
+        }
 
-    float porcentagemGostaramFem = Porcentagem(gostaramFem, totalFem);
-    float porcentagemNaoGostaramMasc = Porcentagem(naoGostaramMasc, totalMasc);
-    printf("Porcentagem de pessoas do sexo feminino que gostaram do produto: %.2f%%\n", porcentagemGostaramFem);
-    printf("Porcentagem de pessoas do sexo masculino que não gostaram do produto: %.2f%%\n", porcentagemNaoGostaramMasc);
+    porcentagemMulheres = qtdMulheres / 100 * n;
+    porcentagemHomens = qtdHomens / 100 * n;
+
+    printf("cerca de %.2f%% das mulheres gostaram do produto\n", porcentagemMulheres);
+    printf("cerca de %.2f%% dos homens nao gostaram do produto\n", porcentagemHomens);
 
     return 0;
 }
