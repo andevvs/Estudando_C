@@ -1,3 +1,13 @@
+/*Questao-2. Crie um tipo estruturado para armazenar dados de uma pessoa. Uma estrutura deste tipo possui os
+seguintes campos: nome da pessoa, numero do documento e idade.
+a) Escreva uma fun¸c˜ao que receba como parˆametro o endere¸co de uma estrutura do tipo Pessoa e
+preencha seus campos com valores fornecidos pelo usu´ario via teclado.
+b) Escreva uma fun¸c˜ao que receba como parˆametro o endere¸co de uma estrutura do tipo Pessoa e
+imprima os valores dos seus campos.
+c) Implemente uma fun¸c˜ao para realizar uma atualiza¸c˜ao da idade de uma estrutura do tipo Pessoa.
+d) Escreva uma fun¸c˜ao que receba como parˆametro um vetor de estruturas do tipo Pessoa e imprima
+o nome da Pessoa mais velha e mais nova*/
+
 #include <stdio.h>
 
 typedef union documento{
