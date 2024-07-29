@@ -46,7 +46,7 @@ int main(void)
 
     do
     {
-        printf(CYAN"\n\t==== MENU ====\n");
+        printf(CYAN"\n\t~~~~ MENU ~~~~\n");
         printf("[1]- Fazer matricula\n");
         printf("[2]- Vizualizar notas\n");
         printf("[3]- Vizualizar todos os dados\n");
