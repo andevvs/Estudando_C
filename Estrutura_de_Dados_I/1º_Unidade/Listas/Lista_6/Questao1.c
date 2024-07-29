@@ -136,7 +136,7 @@ void imprime_tudo(int n, Aluno **alunos)
         printf("\n\t---Aluno %d---\n", i);
         printf("Nome: %s\n", alunos[i]->nome);
         printf("Matricula: %d\n", alunos[i]->matricula);
-        printf("Turma: %s", alunos[i]->turma);
+        printf("Turma: %s\n", alunos[i]->turma);
         printf("Notas:\n1: %f\n2: %f\n3: %f\n", alunos[i]->notas[0], alunos[i]->notas[1], alunos[i]->notas[2]);
         printf("Media: %f\n", alunos[i]->media);
     }
