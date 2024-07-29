@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "aluno.h"
 
 typedef struct aluno{
     int matricula;
