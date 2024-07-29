@@ -5,10 +5,7 @@
 #include "aluno.c"
 
 int main(void){
-    Aluno * aluno = (Aluno*) malloc(sizeof(aluno));
-    if (aluno == NULL){
-        exit(1);
-    };
+    Aluno * aluno = aloca_aluno();
     preenche(aluno);
     imprime(aluno);
     return 0;

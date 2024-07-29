@@ -7,6 +7,17 @@ typedef struct aluno{
     char nome[20];
 }Aluno;
 
+Aluno * aloca_aluno(void){
+     Aluno * aluno = (Aluno*) malloc(sizeof(aluno));
+    if (aluno == NULL){
+        exit(1);
+    }
+    else{
+        printf("Aluno alocado");
+    }
+    return aluno;
+}
+
 void preenche(Aluno * aluno){
     printf("Insira o nome do aluno:\t");
     scanf(" %[^\n]", aluno->nome);
