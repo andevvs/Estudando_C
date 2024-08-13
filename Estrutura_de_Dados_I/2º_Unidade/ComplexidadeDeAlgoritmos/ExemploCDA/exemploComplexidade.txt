@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int soma(int valor ){ 
+    int acumulador=0; // c1 1 vez
+    int contador;     // c2 1 vez
+    for (contador = 0; contador <= valor; contador++){ I 
+                acumulador+=0;                         I c3n n vez
+    }                                                  I
+    return acumulador; // c4 1 vez
+}
+
+
+T(soma)= c1+c2+c3n+c4
+
+= b+na
