@@ -1,0 +1,68 @@
+Resposta Questão 1:
+
+C1 + C2 * n + C3  
+T(n) = n*a + b  
+
+Notação Big-O  
+T(n) = a*n 
+T(n) = n  
+T(n) = O(n)
+
+Resposta Questão 2(a):
+
+C1*n + C2 * n² + C3 * n²  
+n²(C2 + C3) + C1*n  
+n²a + n*b  
+
+Notação Big-O:  
+T(n) = n²a + nb  
+T(n) = n² + n 
+T(n) = n²  
+T(n) = O(n²)
+
+Resposta Questão 2(b):
+C1(n) + C2(n)  
+n(C1 + C2)  
+n*a  
+
+Notação Big-O:  
+T(n) = na 
+T(n) = n  
+T(n) = O(n)
+
+o algoritmo B é mais eficiente que o algoritmo a, por que a complexidade de tempo cresce de forma linear,e o algoritmo A é uma função quadrática.
+
+Resposta Questão 3:
+
+O espaço de arr[] é nB.  
+O espaço de n é 1B, de soma é 1B, de i é 1B.  
+S(soma) = 3B + nB  
+S(soma) = B(3+n)
+
+Resposta Questão 4:
+
+C1 * n + C2 * n + C3*n  
+n(C1+C2+C3)  
+Na  
+
+Notação Big-O:  
+T(n) = n*a 
+T(n) = n  
+T(n) = O(n).
+
+A complexidade de uma busca binária é O(log n), a eficiência na complexidade de tempo comparada à função linear O(n), tem um melhor tempo de execução.
+
+Resposta Questão 5:
+
+C1 + C2 * n + C3 * n + C4 * n² + C5 * n² + C6 * n² + C7 * n + C8 * n + C9 * n  
+n²(C4 + C5 + C6) + n(C2 + C3 + C7 + C8 + C9) + c  
+n²a + nb + c  
+
+Notação Big-O:  
+T(n) = n²a + nb + c 
+T(n) = n²a + nb 
+T(n) = n² + n 
+T(n) = n²  
+T(n) = O(n²).
+
+o QuickSort tem a complexidade O(n log n).
