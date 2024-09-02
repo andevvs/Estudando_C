@@ -19,20 +19,24 @@ Este repositório está organizados com base nos conteúdos estudados até o mom
 
 ### 2° Unidade:
 
-- _[Manipulação de Arquivos]_
-- _[TAD]_
-- _[Complexidade de algoritmos]_
+- _[Manipulação de Arquivos][5]_
+- _[TAD][6]_
+- _[Complexidade de algoritmos][7]_
   
 ### 3° Unidade:
 
-- _[Listas Encadeadas]_
-- _[Pilhas]_
-- _[Filas]_
+- _[Listas Encadeadas][8]_
+- _[Pilhas][9]_
+- _[Filas][10]_
 
 [1]: https://github.com/andevvs/Estudando_C/tree/main/Estrutura_de_Dados_I/1º_Unidade/Ponteiros
 [2]: https://github.com/andevvs/Estudando_C/tree/main/Estrutura_de_Dados_I/1º_Unidade/Alocacao_dinamica
 [3]: https://github.com/andevvs/Estudando_C/tree/main/Estrutura_de_Dados_I/1º_Unidade/Struct
 [4]: https://github.com/andevvs/Estudando_C/tree/main/Estrutura_de_Dados_I/1º_Unidade/Union_e_Enum
+[5]:
+[6]:https://github.com/andevvs/Estudando_C/tree/main/Estrutura_de_Dados_I/2º_Unidade/TAD
+[7]:https://github.com/andevvs/Estudando_C/tree/main/Estrutura_de_Dados_I/2º_Unidade/ComplexidadeDeAlgoritmos
+
 
 ## Como usar?
 
