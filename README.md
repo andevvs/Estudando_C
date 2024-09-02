@@ -35,6 +35,7 @@ Este repositório está organizados com base nos conteúdos estudados até o mom
 [4]: https://github.com/andevvs/Estudando_C/tree/main/Estrutura_de_Dados_I/1º_Unidade/Union_e_Enum
 [6]:https://github.com/andevvs/Estudando_C/tree/main/Estrutura_de_Dados_I/2º_Unidade/TAD
 [7]:https://github.com/andevvs/Estudando_C/tree/main/Estrutura_de_Dados_I/2º_Unidade/ComplexidadeDeAlgoritmos
+[5]:https://github.com/andevvs/Estudando_C/tree/main/Estrutura_de_Dados_I/2º_Unidade/ManipulacaoDeArquivos
 
 
 ## Como usar?
