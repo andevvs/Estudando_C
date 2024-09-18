@@ -4,6 +4,7 @@
         "Questao4.C": "cpp",
         "Questao1.C": "cpp",
         "stdio.h": "c",
-        "ALUNO.C": "cpp"
+        "ALUNO.C": "cpp",
+        "fruta.h": "c"
     }
 }
