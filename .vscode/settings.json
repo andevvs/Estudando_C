@@ -5,6 +5,7 @@
         "Questao1.C": "cpp",
         "stdio.h": "c",
         "ALUNO.C": "cpp",
-        "fruta.h": "c"
+        "fruta.h": "c",
+        "Q1.C": "cpp"
     }
 }
