@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "exFilaLista.h"
-
-
 typedef struct lista{
     float info;
     struct lista *prox;
