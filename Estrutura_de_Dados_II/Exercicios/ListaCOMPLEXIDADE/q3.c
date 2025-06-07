@@ -12,3 +12,5 @@ n	Tempo médio (s)
 A partir de n = 35, o tempo já é elevado. Confirma-se a complexidade exponencial O(2ⁿ).
 
 */
+
+//andrei vieira

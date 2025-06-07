@@ -25,3 +25,5 @@ int main() {
     printf("Tempo medio: %f segundos\n", total_time / NMax);
     return 0;
 }
+
+//andrei vieira

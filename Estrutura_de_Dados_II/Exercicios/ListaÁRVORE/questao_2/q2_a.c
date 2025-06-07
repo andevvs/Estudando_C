@@ -27,3 +27,5 @@ typedef struct NoAluno {
     struct NoAluno *esquerdo; 
     struct NoAluno *direito;  
 } NoAluno;
+
+//andrei vieira

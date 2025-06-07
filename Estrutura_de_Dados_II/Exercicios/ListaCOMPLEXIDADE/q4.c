@@ -50,3 +50,5 @@ int x_binet(int n) {
 }
 
 Complexidade: O(1) tempo
+
+//andrei vieira

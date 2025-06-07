@@ -47,3 +47,5 @@ No* Remover(No* T) {
     free(T);             
     return NULL;         
 }
+
+//andrei vieira

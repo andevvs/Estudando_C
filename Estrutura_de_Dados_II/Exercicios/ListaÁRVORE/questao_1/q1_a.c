@@ -14,3 +14,4 @@ typedef struct No
     struct No *direito;
 } No;
 
+//andrei vieira
